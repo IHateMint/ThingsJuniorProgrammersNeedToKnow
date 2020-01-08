@@ -38,13 +38,15 @@ docker run -dti --name bionic-test ubuntu:bionic     # Using ubuntu:bionic image
 ```
 `run` command only creates a container, and we need to start the created container. 
 ```
-docker start bionic-test
+docker start <container-id>
 ```
 To go inside the container,
 ```
-docker attach bionic-test
+docker attach <container-name>
 ```
 If you enter `exit` command inside the container, the container stops, and needs to be restarted.
 ```
-docker restart bionic-test
+docker restart <container-id>
+
+Both `container-id` and `container-name` are fine for above commands, but I've found out that starting and restarting with `container-name` have some bugs, and may not start the container ordinarily. So, in my exeperience, I recommend using `container-id`.
 ```
