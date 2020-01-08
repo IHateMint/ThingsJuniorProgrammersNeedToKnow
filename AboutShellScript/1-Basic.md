@@ -4,6 +4,7 @@ There are three types of descriptors, 0, 1, 2.
 
 `Command 1> output` saves the standard output to the output.
 `Command 2> error` saves the standard error to the output.
+
 ---
 
 `/dev/null` file is always kept empty. Thus, if output isn't needed, send it to `/dev/null`.
