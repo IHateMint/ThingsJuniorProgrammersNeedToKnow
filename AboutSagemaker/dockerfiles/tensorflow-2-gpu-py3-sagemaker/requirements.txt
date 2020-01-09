@@ -1,0 +1,4 @@
+pandas                  >= 0.25.3
+boto3                   >= 1.9.25
+sagemaker-containers    >= 2.6.2
+sagemaker               >= 1.50.1
