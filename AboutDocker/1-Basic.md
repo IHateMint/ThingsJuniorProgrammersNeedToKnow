@@ -57,6 +57,18 @@ docker restart <container-id>
 Both `container-id` and `container-name` are fine for above commands, but I've found out that starting and restarting with `container-name` have some bugs, and may not start the container ordinarily. So, in my exeperience, I recommend using `container-id`.
 ```
 
+To save the container exactly with the current settings, it can be done with `commit`.
+After committing, it can be pushed to the docker cloud, or AWS ECR(this will be introduced more specifially in third story.).
+```
+docker commit <container-id> <IMAGE-name>
+```
+```
+docker login
+export DOCKER_ID_USER="<DOCKER ID>"
+docker tag <tag> $DOCKER_ID_USER/<IMAGE-name>
+docker push $DOCKER_ID_USER/<IMAGE-name>
+```
+
 ---
 There is a great explanation on container detachment.
 https://stackoverflow.com/questions/25267372/correct-way-to-detach-from-a-container-without-stopping-it
