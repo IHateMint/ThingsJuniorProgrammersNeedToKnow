@@ -1,5 +1,11 @@
 # Docker Basic
 ---
+## Basic Concept
+Below docker containers, there is a host os, and each container runs on the host os. Inside the containers, os image isn't fully packaged. Kernel uses the host os itself, but packages only the difference between the specified guest os and the host os. Executing a command inside the container is actually the host os operation. Thus, the process space is shared with the host os.
+cf. VM(Virtual Machine) runs on top of Hypervisor (Guest Machine)
+
+## Docker Lifecycle
+
 
 ## Install for linux
 ```
@@ -50,3 +56,7 @@ docker restart <container-id>
 
 Both `container-id` and `container-name` are fine for above commands, but I've found out that starting and restarting with `container-name` have some bugs, and may not start the container ordinarily. So, in my exeperience, I recommend using `container-id`.
 ```
+
+---
+There is a great explanation on container detachment.
+https://stackoverflow.com/questions/25267372/correct-way-to-detach-from-a-container-without-stopping-it
