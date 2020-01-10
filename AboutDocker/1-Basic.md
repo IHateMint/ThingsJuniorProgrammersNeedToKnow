@@ -5,7 +5,7 @@ Below docker containers, there is a host os, and each container runs on the host
 cf. VM(Virtual Machine) runs on top of Hypervisor (Guest Machine)
 
 ## Docker Lifecycle
-
+Created / Starting / Restarting / Paused / Exited / Dead
 
 ## Install for linux
 ```
