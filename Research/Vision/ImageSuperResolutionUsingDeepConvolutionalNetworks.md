@@ -5,6 +5,8 @@
 2. Year: 2014
 
 ## Summary
+- Super Resolution
+    ![SR_basic](./SourceImages/SR_basic.png)
 - Contribution
     1. Learns end-to-end mapping between low and high resolution image using CNN (with mininum pre/post-processing)
     2. Naturally extends the traditional signal processing method to deep learning
@@ -24,6 +26,8 @@
         - Sparse coding method usually has equal n1, n2. Thus, acts same as 1x1 filter mapping ("pixel-wise fc layer")
      3. Reconstruction: generate HR image from n2-dimension patch
         - Corresponds to averaging overlapping patches and averaging it. This averaging is considered as a pre-defined filter
+    ![SR_model](./SourceImages/SR_model.png)
+    ![SR_SC_comparision](./SourceImages/SR_sparse_coding_method.png)
  - More details
      - Metric: MSE -> High PSNR (Widely used metric for quantitatively evaluating image restoration quality)
         - MSE: Between central pixels of label and output (Smaller output than label)
