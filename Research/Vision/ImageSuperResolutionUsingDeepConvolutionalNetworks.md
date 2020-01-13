@@ -5,8 +5,7 @@
 2. Year: 2014
 
 ## Summary
-- Super Resolution
-    ![SR_basic](./SourceImages/SR_basic.png)
+   ![SR_basic](./SourceImages/SR_basic.png)
 - Contribution
     1. Learns end-to-end mapping between low and high resolution image using CNN (with mininum pre/post-processing)
     2. Naturally extends the traditional signal processing method to deep learning
@@ -35,9 +34,10 @@
         - SSIM, IFC, NQM, WPSNR, MSSSIM
      - Dataset: ILSVRC 2013 ImageNet detection training partition (91 images / 395,909 images)
      - Comparison: SC, NE+LLE(neighbour embedding + locally linear embedding), ANR(Anchored Neighbourhood Regression), KK
-     - ![SR_convergence_curve](./SourceImages/SR_convergence_curve.png)
+     ![SR_convergence_curve](./SourceImages/SR_convergence_curve.png)
  - Minor details
     - Smaller learning rate in the last layer(10^-5), and bigger learning rate in other layers(10^-4)
     - Synthesize LR images by blurring by Gaussian kernel, sub-sampling it, and upscale it by bicubic interpolation
 
 ## References
+<https://arxiv.org/pdf/1501.00092.pdf>
