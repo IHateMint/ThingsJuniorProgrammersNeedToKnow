@@ -31,7 +31,7 @@
         - SSIM, IFC, NQM, WPSNR, MSSSIM
      - Dataset: ILSVRC 2013 ImageNet detection training partition (91 images / 395,909 images)
      - Comparison: SC, NE+LLE(neighbour embedding + locally linear embedding), ANR(Anchored Neighbourhood Regression), KK
-     ![ex_screenshot](../SourceImages/SR_convergence_curve.png)
+     - ![SR_convergence_curve](./SourceImages/SR_convergence_curve.png)
  - Minor details
     - Smaller learning rate in the last layer(10^-5), and bigger learning rate in other layers(10^-4)
     - Synthesize LR images by blurring by Gaussian kernel, sub-sampling it, and upscale it by bicubic interpolation
