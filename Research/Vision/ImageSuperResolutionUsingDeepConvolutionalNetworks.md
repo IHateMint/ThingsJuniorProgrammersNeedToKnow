@@ -5,8 +5,7 @@
 2. Year: 2014
 
 ## Summary
-- Super Resolution
-    ![SR_basic](./SourceImages/SR_basic.png)
+   ![SR_basic](./SourceImages/SR_basic.png)
 - Contribution
     1. Learns end-to-end mapping between low and high resolution image using CNN (with mininum pre/post-processing)
     2. Naturally extends the traditional signal processing method to deep learning
