@@ -19,6 +19,7 @@
      1. Patch extraction and representation: extract patch from LR image Y
      2. Non-linear mapping: map patch from N-dimension to M-dimension
      3. Reconstruction: generate HR image from M-dimension patch
+        - Traditionally, 
  - More details
      - Metric
      - Dataset
