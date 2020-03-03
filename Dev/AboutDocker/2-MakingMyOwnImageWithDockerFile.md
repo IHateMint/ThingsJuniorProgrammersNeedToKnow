@@ -38,4 +38,5 @@ Below are the basic Dockerfile commands that is useful, though there are many ot
 ```
 docker commit -a "commit message" <container_id> <imagename>
 docker tag <imagename> <userid>/<imagename_on_hub>:<tag>
+docker push <userid>/<imagename_on_hub>:<tag>
 ```
