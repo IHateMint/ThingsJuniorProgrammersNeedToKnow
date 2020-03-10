@@ -4,6 +4,10 @@ I am a junior deep learning researcher and a data engineer(scientist), and have 
 ---
 # Dev Trees
 - AboutDocker
+- AboutKubernetes
+- AboutVim
+- AboutShellScript
+- AboutSagemaker
 
 # Research Trees
 - TODO

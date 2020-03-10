@@ -31,3 +31,12 @@ docker build -f Dockerfile -t <imgname>:<tag>
 Now, you can check whether an image was created properly, by entering `docker images`
 
 Version controls are possible by specifying tag at the end. Dockerfile is much better way to create an image, than just saving the image itself, because any minor changes can be rapidly dealt with.
+
+Below are the basic Dockerfile commands that is useful, though there are many other command
+
+## Pushing to Dockerhub
+```
+docker commit -a "commit message" <container_id> <imagename>
+docker tag <imagename> <userid>/<imagename_on_hub>:<tag>
+docker push <userid>/<imagename_on_hub>:<tag>
+```
